@@ -42,5 +42,7 @@
 15. adım: <ins>7,3</ins>,9,11,12
 16. adım: <ins>3,7</ins>,9,11,12
 
+![image](https://github.com/user-attachments/assets/967ff612-6ccd-43e1-80f6-77581f11fbf0) ![image](https://github.com/user-attachments/assets/d2eeb083-7455-458e-8189-235bd078ac9a)
+
 
 
