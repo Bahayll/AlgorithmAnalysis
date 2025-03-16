@@ -1,5 +1,4 @@
-﻿
-namespace AlgorithmAnalysis.BubbleSortAlgorithm
+﻿namespace AlgorithmAnalysis.SortAlgorithms
 {
     public class BubleSort
     {
@@ -17,7 +16,6 @@ namespace AlgorithmAnalysis.BubbleSortAlgorithm
                     operationCount++;
                     if (array[j] > array[j + 1])
                     {
-                        // Değişim yapma
                         int temp = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = temp;
@@ -41,7 +39,7 @@ namespace AlgorithmAnalysis.BubbleSortAlgorithm
                 swapped = false;
                 for (int j = 0; j < n - i - 1; j++)
                 {
-                    operationCount++; 
+                    operationCount++;
                     if (array[j] > array[j + 1])
                     {
                         int temp = array[j];
