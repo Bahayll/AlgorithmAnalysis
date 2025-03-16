@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgorithmAnalysis.SortAlgorithms
+namespace AlgorithmAnalysis.Algorithms.SortAlgorithms
 {
     public class InsertionSort
     {
@@ -26,7 +26,7 @@ namespace AlgorithmAnalysis.SortAlgorithms
                 arr[j + 1] = key;
             }
             Console.WriteLine("Small to Large Sequential Series: " + string.Join(", ", arr));
-            return arr; 
+            return arr;
         }
         public static int[] SortDescending(int[] arr)
         {
@@ -45,7 +45,7 @@ namespace AlgorithmAnalysis.SortAlgorithms
                 arr[j + 1] = key;
             }
             Console.WriteLine("Large to Smaller Sequential Series: " + string.Join(", ", arr));
-            return arr; 
+            return arr;
         }
 
         public static int[] OptimizedSort(int[] arr)

@@ -1,4 +1,4 @@
-﻿namespace AlgorithmAnalysis.SortAlgorithms
+﻿namespace AlgorithmAnalysis.Algorithms.SortAlgorithms
 {
     public class BubleSort
     {

@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using AlgorithmAnalysis.FinderAlgorithms;
-using AlgorithmAnalysis.SortAlgorithms;
+using AlgorithmAnalysis.Algorithms.FinderAlgorithms;
 using AlgorithmAnalysis.Tester;
 
 
@@ -17,5 +16,8 @@ SortingAlgorithmTester.TestSortAlgorithm(InsertionSort.SortAscending, sizeArray)
 SortingAlgorithmTester.TestSortAlgorithm(InsertionSort.SortDescending, sizeArray);
 SortingAlgorithmTester.TestSortAlgorithm(InsertionSort.OptimizedSort, sizeArray);
 */
+/*
 KthSmallestTester.TestKthSmallestAlgorithm(KthSmallestFinder.FindKthSmallest_Sort, sizeArray, 10);
 KthSmallestTester.TestKthSmallestAlgorithm(KthSmallestFinder.FindKthSmallest_Insertion, sizeArray, 5);
+*/
+SearchAlgorithmTester.TestSearchAlgorithm();

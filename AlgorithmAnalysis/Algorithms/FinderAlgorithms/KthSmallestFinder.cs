@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgorithmAnalysis.FinderAlgorithms
+namespace AlgorithmAnalysis.Algorithms.FinderAlgorithms
 {
     public class KthSmallestFinder
     {
@@ -14,7 +14,7 @@ namespace AlgorithmAnalysis.FinderAlgorithms
             Array.Sort(temp);
             return temp[k - 1];
         }
-        
+
         public static int FindKthSmallest_Insertion(int[] arr, int k)
         {
             int[] kSmallest = new int[k];
@@ -23,21 +23,21 @@ namespace AlgorithmAnalysis.FinderAlgorithms
 
             for (int i = k; i < arr.Length; i++)
             {
-                int newValue = arr[i];    
+                int newValue = arr[i];
                 if (newValue < kSmallest[k - 1])
                 {
                     int j = k - 2;
 
-                    while(j>=0 && kSmallest[j]> newValue)
+                    while (j >= 0 && kSmallest[j] > newValue)
                     {
-                        kSmallest[j+1] = kSmallest[j];
+                        kSmallest[j + 1] = kSmallest[j];
                         j--;
                     }
-                    kSmallest[j+1] = newValue;
+                    kSmallest[j + 1] = newValue;
                 }
             }
-            Console.WriteLine( string.Join(", ", arr));
-            Console.WriteLine( string.Join(", ", kSmallest));
+            Console.WriteLine(string.Join(", ", arr));
+            Console.WriteLine(string.Join(", ", kSmallest));
             return kSmallest[k - 1];
         }
     }
