@@ -14,7 +14,7 @@ namespace AlgorithmAnalysis.FinderAlgorithms
             Array.Sort(temp);
             return temp[k - 1];
         }
-
+        
         public static int FindKthSmallest_Insertion(int[] arr, int k)
         {
             int[] kSmallest = new int[k];
@@ -23,16 +23,21 @@ namespace AlgorithmAnalysis.FinderAlgorithms
 
             for (int i = k; i < arr.Length; i++)
             {
-                if (arr[i] < kSmallest[k - 1])
+                int newValue = arr[i];    
+                if (newValue < kSmallest[k - 1])
                 {
-                    kSmallest[k - 1] = arr[i];
+                    int j = k - 2;
 
-                    for (int j = k - 2; j >= 0 && kSmallest[j] > arr[i]; j--)
+                    while(j>=0 && kSmallest[j]> newValue)
                     {
-                        (kSmallest[j + 1], kSmallest[j]) = (kSmallest[j], kSmallest[j + 1]);
+                        kSmallest[j+1] = kSmallest[j];
+                        j--;
                     }
+                    kSmallest[j+1] = newValue;
                 }
             }
+            Console.WriteLine( string.Join(", ", arr));
+            Console.WriteLine( string.Join(", ", kSmallest));
             return kSmallest[k - 1];
         }
     }
