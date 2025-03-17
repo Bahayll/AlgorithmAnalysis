@@ -10,7 +10,7 @@ namespace AlgorithmAnalysis.Tester
         {
 
             int[] sizeArray = { 10, 100,1000 };
-            int[] kValues = { 3, 5, 7 }; // Farklı k değerleri
+            int[] kValues = { 3, 5, 7 }; 
 
             foreach (int size in sizeArray)
             {
