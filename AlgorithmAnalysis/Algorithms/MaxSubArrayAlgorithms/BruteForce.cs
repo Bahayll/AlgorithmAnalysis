@@ -9,7 +9,7 @@ namespace AlgorithmAnalysis.Algorithms.MaxSubArrayAlgorithms
     public class BruteForce
     {
         // O(n^3)
-        public static int FirstBruteForce(int[] arr)
+        public static int FirstBruteForce(int[] arr, ref int operationCount)
         {
             int n = arr.Length;
             int maxSum = int.MinValue; 
@@ -22,6 +22,7 @@ namespace AlgorithmAnalysis.Algorithms.MaxSubArrayAlgorithms
                     for (int k = start; k <= end; k++) 
                     {
                         sum += arr[k];
+                        operationCount++;
                     }
                     maxSum = Math.Max(maxSum, sum); 
                 }
@@ -31,7 +32,7 @@ namespace AlgorithmAnalysis.Algorithms.MaxSubArrayAlgorithms
         }
 
         // O(n^2)
-        public static int SecondBruteForce(int[] arr)
+        public static int SecondBruteForce(int[] arr, ref int operationCount)
         {
             int n = arr.Length;
             int maxSum = int.MinValue;
@@ -41,7 +42,8 @@ namespace AlgorithmAnalysis.Algorithms.MaxSubArrayAlgorithms
                 int sum = 0; 
                 for (int end = start; end < n; end++)
                 {
-                    sum += arr[end]; 
+                    sum += arr[end];
+                    operationCount++;
                     maxSum = Math.Max(maxSum, sum);
                 }
             }

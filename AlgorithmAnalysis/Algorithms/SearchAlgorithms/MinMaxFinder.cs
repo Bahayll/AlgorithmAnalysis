@@ -8,10 +8,9 @@ namespace AlgorithmAnalysis.Algorithms.SearchAlgorithms
 {
     public class MinMaxFinder
     {
-        public static int Min(int[] arr, out int operationCount)
+        public static int Min(int[] arr, ref int operationCount)
         {
             int min = arr[0];
-            operationCount = 0;
 
             for (int i = 1; i < arr.Length; i++)
             {
@@ -22,10 +21,9 @@ namespace AlgorithmAnalysis.Algorithms.SearchAlgorithms
 
             return min; 
         }
-        public static int Max(int[] arr,out int operationCount)
+        public static int Max(int[] arr,ref int operationCount)
         {
             int max = arr[0];
-            operationCount = 0;
             for (int i = 1; i < arr.Length; i++)
             {
                 operationCount++;

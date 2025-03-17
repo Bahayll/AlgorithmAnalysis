@@ -8,14 +8,15 @@ namespace AlgorithmAnalysis.Algorithms.MaxSubArrayAlgorithms
 {
     public class Kadane
     {
-        public static int FindMaxSubArray(int[] arr)
+        public static int FindMaxSubArray(int[] arr, ref int operationCount)
         {
             int maxSum = int.MinValue;
             int sum = 0;
 
             for (int i = 0; i < arr.Length; i++)
             {
-                sum += arr[i];  
+                sum += arr[i];
+                operationCount++;
                 if (sum > maxSum)
                      maxSum = sum;
                 if(sum < 0 )

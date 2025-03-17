@@ -1,24 +1,34 @@
-﻿using AlgorithmAnalysis.Helpers;
+﻿using AlgorithmAnalysis.Algorithms.FinderAlgorithms;
+using AlgorithmAnalysis.Helpers;
 using System.Diagnostics;
 
 namespace AlgorithmAnalysis.Tester
 {
     public class KthSmallestTester
     {
-        public static void TestKthSmallestAlgorithm(Func<int[], int, int> algorithm, int[] sizes, int k)
+        public static void TestKthSmallestAlgorithm()
         {
-            foreach (int size in sizes)
+
+            int[] sizeArray = { 10, 100,1000 };
+            int[] kValues = { 3, 5, 7 }; // Farklı k değerleri
+
+            foreach (int size in sizeArray)
             {
                 int[] arr = RandomArrayHelper.GenerateRandomArray(size);
 
-                Console.WriteLine($"Algorithm: {algorithm.Method.Name}, Array Length: {size}, k: {k}");
+                foreach (int kValue in kValues)
+                {
+                    Console.WriteLine($"Array Length: {size}, k: {kValue}");
 
-                Stopwatch stopwatch = Stopwatch.StartNew();
-                int result = algorithm((int[])arr.Clone(), k);
-                stopwatch.Stop();
+                    int operationCount = 0;
+                    int result = TimeHelper.MeasureTime("FindKthSmallest_Sort (O(n log n))", () => KthSmallestFinder.FindKthSmallest_Sort((int[])arr.Clone(), kValue, ref operationCount));
+                    Console.WriteLine($"Operation Count: {operationCount}");
+                    operationCount = 0;
+                    result = TimeHelper.MeasureTime("FindKthSmallest_Insertion (O(n*k))", () => KthSmallestFinder.FindKthSmallest_Insertion((int[])arr.Clone(), kValue, ref operationCount));
+                    Console.WriteLine($"Operation Count: {operationCount}");
 
-                Console.WriteLine($"Result: {result}, Time: {stopwatch.ElapsedMilliseconds} ms");
-                Console.WriteLine(new string('-', 50));
+                    Console.WriteLine(new string('-', 50));
+                }
             }
         }
     }

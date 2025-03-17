@@ -2,11 +2,8 @@
 {
     public class BubleSort
     {
-        public static int operationCount;
-
-        public static int[] Sort(int[] array)
+        public static int[] Sort(int[] array, ref int operationCount)
         {
-            operationCount = 0;
             int n = array.Length;
 
             for (int i = 0; i < n - 1; i++)
@@ -23,14 +20,12 @@
                 }
             }
 
-            Console.WriteLine($"Classic Bubble Sort - Operations: {operationCount}, Big-O: O(n²)");
             return array;
         }
 
         // If the algorithm is Sequential, it finishes in one cycle.
-        public static int[] OptimizedSort(int[] array)
+        public static int[] OptimizedSort(int[] array, ref int operationCount)
         {
-            operationCount = 0;
             int n = array.Length;
             bool swapped;
 
@@ -49,12 +44,10 @@
                     }
                 }
 
-                // If no swaps were made, break the loop
                 if (!swapped)
                     break;
             }
 
-            Console.WriteLine($"Optimized Bubble Sort - Operations: {operationCount}, Big-O: O(n²) best case O(n)");
             return array;
         }
     }

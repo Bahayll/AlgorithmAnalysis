@@ -15,7 +15,16 @@ namespace AlgorithmAnalysis.Helpers
             int result = method();
             sw.Stop();
 
-            Console.WriteLine($"{methodName}: Result {result}, Duration: {sw.ElapsedMilliseconds} ms");
+            Console.WriteLine($"{methodName}: Result {result}, Duration: {sw.ElapsedMilliseconds} ms ");
+            return result;
+        }
+        public static int[] MeasureTime(string methodName, Func<int[]> method)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+            int[] result = method();
+            sw.Stop();
+
+            Console.WriteLine($"{methodName} Duration: {sw.ElapsedMilliseconds} ms ");
             return result;
         }
     }

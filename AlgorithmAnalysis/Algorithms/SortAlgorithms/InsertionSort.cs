@@ -9,7 +9,7 @@ namespace AlgorithmAnalysis.Algorithms.SortAlgorithms
 {
     public class InsertionSort
     {
-        public static int[] SortAscending(int[] arr)
+        public static int[] SortAscending(int[] arr, ref int operationCount)
         {
             int n = arr.Length;
             for (int i = 1; i < n; i++)
@@ -21,14 +21,14 @@ namespace AlgorithmAnalysis.Algorithms.SortAlgorithms
                 {
                     arr[j + 1] = arr[j];
                     j--;
+                    operationCount++;
 
                 }
                 arr[j + 1] = key;
             }
-            Console.WriteLine("Small to Large Sequential Series: " + string.Join(", ", arr));
             return arr;
         }
-        public static int[] SortDescending(int[] arr)
+        public static int[] SortDescending(int[] arr, ref int operationCount)
         {
             int n = arr.Length;
             for (int i = 1; i < n; i++)
@@ -40,15 +40,15 @@ namespace AlgorithmAnalysis.Algorithms.SortAlgorithms
                 {
                     arr[j + 1] = arr[j];
                     j--;
+                    operationCount++;
 
                 }
                 arr[j + 1] = key;
             }
-            Console.WriteLine("Large to Smaller Sequential Series: " + string.Join(", ", arr));
             return arr;
         }
 
-        public static int[] OptimizedSort(int[] arr)
+        public static int[] OptimizedSort(int[] arr, ref int operationCount)
         {
             int n = arr.Length;
             for (int i = 1; i < n; i++)
@@ -58,6 +58,7 @@ namespace AlgorithmAnalysis.Algorithms.SortAlgorithms
 
                 for (int j = i - 1; j >= 0; j--)
                 {
+                    operationCount++;
                     if (arr[j] > currentValue)
                     {
                         arr[j + 1] = arr[j];

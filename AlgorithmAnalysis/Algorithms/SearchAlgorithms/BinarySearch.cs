@@ -3,9 +3,8 @@ namespace AlgorithmAnalysis.Algorithms.SearchAlgorithms
 {
     public class BinarySearch 
     {
-        public static int Search(int[] arr, int target, out int operationCount)
+        public static int Search(int[] arr, int target, ref int operationCount)
         {
-            operationCount = 0;
             int low = 0;
             int high = arr.Length - 1;
             while (low <= high)

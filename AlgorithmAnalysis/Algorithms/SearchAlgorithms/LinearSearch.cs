@@ -3,9 +3,8 @@ namespace AlgorithmAnalysis.SearchAlgorithms
 {
     public class LinearSearch 
     {
-        public static int Search(int[] arr, int target, out int operationCount)
+        public static int Search(int[] arr, int target, ref int operationCount)
         {
-            operationCount = 0;
             for (int i = 0; i < arr.Length; i++)
             {
                 operationCount++;
