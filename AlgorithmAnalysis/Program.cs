@@ -23,4 +23,5 @@ KthSmallestTester.TestKthSmallestAlgorithm(KthSmallestFinder.FindKthSmallest_Ins
 
 //SearchAlgorithmTester.TestSearchAlgorithm();
 
-MaxSubArrayTester.TestMaxSubArrayAlgorithms();
+//MaxSubArrayTester.TestMaxSubArrayAlgorithms();
+PowFunctionTester.TestPowAlgorithms();

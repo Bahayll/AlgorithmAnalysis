@@ -8,7 +8,7 @@ namespace AlgorithmAnalysis.Tester
     {
         public static void TestMaxSubArrayAlgorithms()
         {
-            int[] sizes = { 100, 500, 1000, 5000 }; // Farklı dizi boyutları için test yapacağız
+            int[] sizes = { 100, 500, 1000, 5000 };
             Random rand = new Random();
 
             foreach (int size in sizes)
@@ -17,16 +17,14 @@ namespace AlgorithmAnalysis.Tester
 
                 Console.WriteLine($"Array Size: {size}");
 
-                // Brute Force O(n³)
+ 
                 MeasureTime("Brute Force O(n³)", () => BruteForce.FirstBruteForce(arr), size <= 500);
 
-                // Brute Force O(n²)
+    
                 MeasureTime("Brute Force O(n²)", () => BruteForce.SecondBruteForce(arr), size <= 1000);
 
-                // Divide and Conquer O(n log n)
                 MeasureTime("Divide and Conquer O(n log n)", () => DivideAndConquer.FindMaxSubArray(arr), true);
 
-                // Kadane's Algorithm O(n)
                 MeasureTime("Kadane's Algorithm O(n)", () => Kadane.FindMaxSubArray(arr), true);
 
                 Console.WriteLine(new string('-', 50));
