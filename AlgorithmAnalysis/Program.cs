@@ -20,4 +20,7 @@ SortingAlgorithmTester.TestSortAlgorithm(InsertionSort.OptimizedSort, sizeArray)
 KthSmallestTester.TestKthSmallestAlgorithm(KthSmallestFinder.FindKthSmallest_Sort, sizeArray, 10);
 KthSmallestTester.TestKthSmallestAlgorithm(KthSmallestFinder.FindKthSmallest_Insertion, sizeArray, 5);
 */
-SearchAlgorithmTester.TestSearchAlgorithm();
+
+//SearchAlgorithmTester.TestSearchAlgorithm();
+
+MaxSubArrayTester.TestMaxSubArrayAlgorithms();
