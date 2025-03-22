@@ -1,4 +1,32 @@
 # AlgorithmAnalysis
+## Ders Notları
+![1](https://github.com/user-attachments/assets/0da3b0af-4ca4-4b20-b2af-85520baae1a0)
+![2](https://github.com/user-attachments/assets/82f24212-dc53-4553-9b5e-8fbf35744197)
+![3](https://github.com/user-attachments/assets/963e9847-aff6-4a95-9c72-2adcf4722f54)
+![4](https://github.com/user-attachments/assets/08ba217d-ca30-4864-afc9-cbedda89aa81)
+![5](https://github.com/user-attachments/assets/df19094c-7c54-4552-a162-2afec0d84645)
+![6](https://github.com/user-attachments/assets/fdabf71b-e54c-4c63-b0b8-04a0e57f5b4f)
+![7](https://github.com/user-attachments/assets/810f55c9-25d9-46ab-9cc8-80a0d6e16794)
+![8](https://github.com/user-attachments/assets/b13661e6-3377-471c-bf52-fa28de5391ef)
+![9](https://github.com/user-attachments/assets/08e0f04b-68f2-49c8-8c68-83531100d8f0)
+![10](https://github.com/user-attachments/assets/2cfd17db-2578-4ef3-87af-8d2ca3c17af5)
+![11](https://github.com/user-attachments/assets/f405c25b-8edc-437d-bbb5-2572d7e6a2b9)
+![12](https://github.com/user-attachments/assets/63b312e4-b31c-4141-b49c-5b058bd9b7f5)
+![13](https://github.com/user-attachments/assets/e0860d8c-f145-46f6-966d-3bd47816d7c9)
+![14](https://github.com/user-attachments/assets/b69a534d-da7d-4de2-97f6-e5b06d573e22)
+![15](https://github.com/user-attachments/assets/ee721bb3-3272-4903-8236-68f327cda039)
+![16](https://github.com/user-attachments/assets/8e0e4c15-02fb-4293-b75b-a3217463738a)
+![17](https://github.com/user-attachments/assets/77cf8083-a66f-4378-beb4-a2f4fb90ebdd)
+![18](https://github.com/user-attachments/assets/c3268177-8267-4f36-a31a-592381b72fd8)
+![19](https://github.com/user-attachments/assets/1282f747-3136-430d-b5e4-41e624f929f8)
+![20](https://github.com/user-attachments/assets/dcd2f9a8-b37d-47eb-9b18-af9120556c35)
+![21](https://github.com/user-attachments/assets/fead9a12-f095-4294-9f5b-ba5530961c74)
+![22](https://github.com/user-attachments/assets/cfc1da9a-db32-4ec2-a919-6327555389a0)
+![23](https://github.com/user-attachments/assets/21d912d3-c010-402f-9511-29634d688929)
+![24](https://github.com/user-attachments/assets/8a550cbd-12e6-4e7d-9d42-8b4ddc648a92)
+![25](https://github.com/user-attachments/assets/0cdf23b8-ff72-4f17-a104-1816c59650d7)
+![26](https://github.com/user-attachments/assets/84a21f72-cced-4530-95d5-6d83a663f726)
+
 ## 1. Bubble Sort 
 ### Bubble Sort Nedir?
 + Bubble Sort, en basit sıralama algoritmalarından biridir.
