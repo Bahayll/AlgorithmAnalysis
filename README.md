@@ -1,5 +1,5 @@
-# AlgorithmAnalysis
-## Ders Notları
+# Algorithm Analysis
+## Lecture Notes
 ![1](https://github.com/user-attachments/assets/0da3b0af-4ca4-4b20-b2af-85520baae1a0)
 ![2](https://github.com/user-attachments/assets/82f24212-dc53-4553-9b5e-8fbf35744197)
 ![3](https://github.com/user-attachments/assets/963e9847-aff6-4a95-9c72-2adcf4722f54)
